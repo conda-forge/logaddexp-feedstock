@@ -1,5 +1,5 @@
 {% set name = "logaddexp" %}
-{% set version = "1.0.2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/horta/logaddexp/archive/{{ version }}.tar.gz
-  sha256: d1c64050126074295db9d2aba1241283bbe49729d7bf3136d99696051e65e7a7
+  sha256: d28b671002c77cce037bb1e911b688ea924d114be1376c5222f77f06a741d645
 
 build:
   number: 0
@@ -29,7 +29,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'C library that implements the logarithm of the sum of exponentiations'
+  summary: C library that implements the logarithm of the sum of exponentiations
   dev_url: https://github.com/horta/logaddexp
 
 extra:
