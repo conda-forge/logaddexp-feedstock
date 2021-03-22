@@ -11,18 +11,16 @@ source:
 
 build:
   number: 0
-  skip: true  # [win and vc<14]
+  skip: true  # [win]
 
 requirements:
   build:
     - {{ compiler('c') }}
     - cmake
-    - ninja  # [win]
     - make  # [unix]
 test:
   commands:
     - test -e $PREFIX/include/logaddexp/logaddexp.h            # [unix]
-    - if NOT exist %LIBRARY_INC%/logaddexp/logaddexp.h exit 1  # [win]
 
 about:
   home: https://github.com/horta/logaddexp
