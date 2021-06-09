@@ -4,7 +4,8 @@ set -ex
 
 mkdir build && cd build
 
-cmake \
+# https://conda-forge.org/blog/posts/2020-10-29-macos-arm64/
+cmake ${CMAKE_ARGS} \
      -DCMAKE_BUILD_TYPE=Release \
      -DCMAKE_INSTALL_PREFIX:PATH=$PREFIX \
      ..
