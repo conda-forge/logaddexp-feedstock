@@ -1,5 +1,5 @@
 {% set name = "logaddexp" %}
-{% set version = "2.1.2" %}
+{% set version = "2.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/horta/logaddexp/archive/{{ version }}.tar.gz
-  sha256: b8a9e10ce1b45315b2663bb38641c3625d197e7c6e2a43983918a3ee95dd5642
+  sha256: 306531607eccc153e082a9b76961db3392bf4dc6ca23c0d4f3a6c9caa06a5f13
 
 build:
   number: 0
